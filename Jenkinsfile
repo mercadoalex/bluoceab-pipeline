@@ -4,6 +4,8 @@ pipeline {
     stage('buid') {
       steps {
         echo 'Etapa de construccion'
+        sh '''sleep 5
+echo Exito!'''
       }
     }
 
