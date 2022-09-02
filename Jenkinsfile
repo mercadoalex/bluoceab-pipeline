@@ -12,6 +12,7 @@ echo Exito!'''
     stage('test') {
       steps {
         echo 'Etapa de prueba'
+        sh "chmod +x -R ${env.WORKSPACE}"
         sh './while_example.sh'
       }
     }
